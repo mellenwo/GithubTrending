@@ -28,7 +28,6 @@ class ProjectsRemoteImplTest {
         stubGithubTrendingServiceSearchRepositories(Observable.just(
             ProjectDataFactory.makeProjectsResponse()))
         stubProjectsResponseModelMapperMapFromModel(any(), ProjectDataFactory.makeProjectEntity())
-
         val testObserver = remote.getProjects().test()
         testObserver.assertComplete()
     }
