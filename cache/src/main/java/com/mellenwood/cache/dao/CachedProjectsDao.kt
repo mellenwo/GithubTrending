@@ -1,10 +1,10 @@
 package com.mellenwood.cache.dao
 
+
 import androidx.room.Dao
 import androidx.room.Insert
 import androidx.room.OnConflictStrategy
 import androidx.room.Query
-import com.mellenwood.cache.db.ProjectConstants
 import com.mellenwood.cache.db.ProjectConstants.DELETE_PROJECTS
 import com.mellenwood.cache.db.ProjectConstants.QUERY_BOOKMARKED_PROJECTS
 import com.mellenwood.cache.db.ProjectConstants.QUERY_PROJECTS
@@ -16,9 +16,11 @@ import io.reactivex.Flowable
 abstract class CachedProjectsDao {
 
     @Query(QUERY_PROJECTS)
+    @JvmSuppressWildcards
     abstract fun getProjects(): Flowable<List<CachedProject>>
 
     @Insert(onConflict = OnConflictStrategy.REPLACE)
+    @JvmSuppressWildcards
     abstract fun insertProjects(projects: List<CachedProject>)
 
     @Query(DELETE_PROJECTS)

@@ -1,6 +1,5 @@
 package com.mellenwood.cache.test.factory
 
-import com.mellenwood.data.test.factory.DataFactory
 import java.util.*
 import java.util.concurrent.ThreadLocalRandom
 
@@ -15,7 +14,7 @@ object DataFactory {
     }
 
     fun randomLong(): Long {
-        return DataFactory.randomInt().toLong()
+        return randomInt().toLong()
     }
 
     fun randomBoolean(): Boolean {

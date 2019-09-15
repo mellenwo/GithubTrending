@@ -18,7 +18,7 @@ ext {
     gsonVersion = '2.8.1'
     okHttpVersion = '3.8.1'
     retrofitVersion = '2.3.0'
-    roomVersion = '1.0.0'
+    roomVersion = '2.2.0-rc01'
 
 
     // Testing
@@ -85,13 +85,13 @@ ext {
             dagger:                 "com.google.dagger:dagger:${daggerVersion}",
             gson:                   "com.google.code.gson:gson:${gsonVersion}",
             rxKotlin:               "io.reactivex.rxjava2:rxkotlin:${rxKotlinVersion}",
-            kotlin:                 "org.jetbrains.kotlin:kotlin-stdlib-jre8:${kotlinVersion}",
+            kotlin:                 "org.jetbrains.kotlin:kotlin-stdlib-jdk8:${kotlinVersion}",
             javaxAnnotation:        "javax.annotation:jsr250-api:${javaxAnnotationVersion}",
             javaxInject:            "javax.inject:javax.inject:${javaxInjectVersion}",
             androidAnnotations:     "com.android.support:support-annotations:${androidAnnotationsVersion}",
-            roomRuntime:            "android.arch.persistence.room:runtime:${roomVersion}",
-            roomCompiler:           "android.arch.persistence.room:compiler:${roomVersion}",
-            roomRxJava:             "android.arch.persistence.room:rxJava2:${roomVersion}"
+            roomRuntime:            "androidx.room:room-runtime:${roomVersion}",
+            roomCompiler:           "androidx.room:room-compiler:${roomVersion}",
+            roomRxJava:             "androidx.room:room-rxjava2:${roomVersion}"
     ]
 
     cacheTestDependencies = [
@@ -101,7 +101,8 @@ ext {
             mockito:                "com.nhaarman.mockitokotlin2:mockito-kotlin:${mockitoKotlinVersion}",
             supportRunner:          "com.android.support.test:runner:${androidSupportRunnerVersion}",
             supportRules:           "com.android.support.test:rules:${androidSupportRulesVersion}",
-            roomTesting:            "android.arch.persistence.room:testing:${roomVersion}",
-            archTesting:            "android.arch.core:core-testing:${roomVersion}"
+            roomTesting:            "androidx.room:room-testing:${roomVersion}",
+            archTesting:            "androidx.arch.core:core-testing:2.0.0",
+            roboelectric:           "org.roboelectric:roboelectric:${roboelectricVersion}"
     ]
 }
