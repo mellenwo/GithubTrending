@@ -76,11 +76,12 @@ class ProjectsCacheImpl @Inject constructor(
 
     override fun isProjectsCacheExpired(): Single<Boolean> {
         val currentTime = System.currentTimeMillis()
-        val expirationTime = (60 * 10 * 1000).toLong()
-        return projectsDatabase.configDao().getConfig()
-            .single(Config(lastCacheTime = 0))
-            .map {
-                currentTime - it.lastCacheTime > expirationTime
+        val expirationInterval =(1000 * 60 * 60 ).toLong() // 1 hour
+        return  projectsDatabase.configDao().getConfig()
+            .single(
+                // if config empty set last cache time to zero
+                Config(lastCacheTime = 0)).map {
+                currentTime - it.lastCacheTime > expirationInterval
             }
     }
 
