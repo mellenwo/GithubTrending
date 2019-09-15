@@ -33,7 +33,7 @@ dependencies {
     implementation presentationDependencies.kotlin
     implementation presentationDependencies.javaxInject
     implementation presentationDependencies.rxKotlin
-    implementation presentationDependencies.archRuntime
+    implementation presentationDependencies.rxAndroid
     implementation presentationDependencies.archExtensions
     kapt presentationDependencies.archCompiler
 

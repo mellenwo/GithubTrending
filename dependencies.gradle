@@ -20,7 +20,7 @@ ext {
     okHttpVersion = '3.8.1'
     retrofitVersion = '2.3.0'
     roomVersion = '2.2.0-rc01'
-    archCompVersion = '1.0.0'
+    lifecycleVersion = "2.1.0"
 
 
     // Testing
@@ -109,25 +109,25 @@ ext {
     ]
 
     presentationDependencies = [
-            daggerCompiler:     "com.google.dagger:dagger-compiler:${daggerVersion}",
-            dagger:             "com.google.dagger:dagger:${daggerVersion}",
-            rxKotlin:           "io.reactivex.rxjava2:rxkotlin:${rxKotlinVersion}",
-            kotlin:             "org.jetbrains.kotlin:kotlin-stdlib-jdk7:${kotlinVersion}",
-            rxAndroid:          "io.reactivex.rxjava2:rxandroid:${rxAndroidVersion}",
-            javaxAnnotation:    "javax.annotation:jsr250-api:${javaxAnnotationVersion}",
-            javaxInject:        "javax.inject:javax.inject:${javaxInjectVersion}",
-            androidAnnotations: "com.android.support:support-annotations:${androidAnnotationsVersion}",
-            archRuntime:        "android.arch.lifecycle:runtime:${archCompVersion}",
-            archExtensions:     "android.arch.lifecycle:extensions:${archCompVersion}",
-            archCompiler:       "android.arch.lifecycle:compiler:${archCompVersion}",
+            daggerCompiler:         "com.google.dagger:dagger-compiler:${daggerVersion}",
+            dagger:                 "com.google.dagger:dagger:${daggerVersion}",
+            rxKotlin:               "io.reactivex.rxjava2:rxkotlin:${rxKotlinVersion}",
+            kotlin:                 "org.jetbrains.kotlin:kotlin-stdlib-jdk7:${kotlinVersion}",
+            rxAndroid:              "io.reactivex.rxjava2:rxandroid:${rxAndroidVersion}",
+            javaxAnnotation:        "javax.annotation:jsr250-api:${javaxAnnotationVersion}",
+            javaxInject:            "javax.inject:javax.inject:${javaxInjectVersion}",
+            androidAnnotations:     "com.android.support:support-annotations:${androidAnnotationsVersion}",
+            archRuntime:            "androidx.lifecycle:lifecycle-runtime:${lifecycleVersion}",
+            archExtensions:         "androidx.lifecycle:lifecycle-extensions:${lifecycleVersion}",
+            archCompiler:           "androidx.lifecycle:lifecycle-compiler:${lifecycleVersion}",
     ]
 
     presentationTestDependencies = [
-            junit:              "junit:junit:${jUnitVersion}",
-            kotlinJUnit:        "org.jetbrains.kotlin:kotlin-test-junit:${kotlin_version}",
-            assertj:            "org.assertj:assertj-core:${assertJVersion}",
-            mockito:            "com.nhaarman.mockitokotlin2:mockito-kotlin:${mockitoKotlinVersion}",
-            robolectric:        "org.robolectric:robolectric:${robolectricVersion}",
-            archTesting:        "android.arch.core:core-testing:${archCompVersion}",
+            junit:                  "junit:junit:${jUnitVersion}",
+            kotlinJUnit:            "org.jetbrains.kotlin:kotlin-test-junit:${kotlin_version}",
+            assertj:                "org.assertj:assertj-core:${assertJVersion}",
+            mockito:                "com.nhaarman.mockitokotlin2:mockito-kotlin:${mockitoKotlinVersion}",
+            robolectric:            "org.robolectric:robolectric:${robolectricVersion}",
+            archTesting:            "androidx.arch.core:core-testing:${lifecycleVersion}",
     ]
 }
