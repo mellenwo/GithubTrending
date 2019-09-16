@@ -42,4 +42,14 @@ dependencies {
     testImplementation presentationTestDependencies.assertj
     testImplementation presentationTestDependencies.robolectric
     testImplementation presentationTestDependencies.archTesting
+
+
+    testImplementation "org.robolectric:robolectric:4.3"
+    androidTestImplementation 'androidx.annotation:annotation:1.1.0'
+    testImplementation 'androidx.test:core:1.0.0'
+    androidTestImplementation 'androidx.test:runner:1.1.0'
+    androidTestImplementation 'androidx.test:rules:1.1.0'
+    androidTestImplementation 'androidx.test.ext:junit:1.0.0'
+    androidTestImplementation 'androidx.test.ext:truth:1.0.0'
+    androidTestImplementation 'junit:junit:4.12'
 }
