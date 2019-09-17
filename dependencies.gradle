@@ -4,7 +4,7 @@ ext {
     androidBuildToolsVersion = "26.0.0"
     androidMinSdkVersion = 21
     androidTargetSdkVersion = 26
-    androidCompileSdkVersion = 26
+    androidCompileSdkVersion = 28
     kotlinVersion = '1.1.4-3'
 
     // Libraries
@@ -147,12 +147,12 @@ ext {
             kotlin:                 "org.jetbrains.kotlin:kotlin-stdlib-jre8:${kotlinVersion}",
             javaxAnnotation:        "javax.annotation:jsr250-api:${javaxAnnotationVersion}",
             javaxInject:            "javax.inject:javax.inject:${javaxInjectVersion}",
-            androidAnnotations: 'androidx.annotation:annotation:1.0.0',
-            androidSupportV4: 'androidx.legacy:legacy-support-v4:1.0.0',
-            androidSupportV13: 'androidx.legacy:legacy-support-v13:1.0.0',
-            appCompatV7: 'androidx.appcompat:appcompat:1.0.0',
-            supportRecyclerView: 'androidx.recyclerview:recyclerview:1.0.0',
-            supportDesign: 'com.google.android.material:material:1.0.0',
+            androidAnnotations:     'androidx.annotation:annotation:1.0.0',
+            androidSupportV4:       'androidx.legacy:legacy-support-v4:1.0.0',
+            androidSupportV13:      'androidx.legacy:legacy-support-v13:1.0.0',
+            appCompatV7:            'androidx.appcompat:appcompat:1.0.0',
+            supportRecyclerView:    'androidx.recyclerview:recyclerview:1.0.0',
+            supportDesign:          'com.google.android.material:material:1.0.0',
             timber:                 "com.jakewharton.timber:timber:${timberVersion}",
             daggerSupport:          "com.google.dagger:dagger-android-support:${daggerVersion}",
             daggerProcessor:        "com.google.dagger:dagger-android-processor:${daggerVersion}",
@@ -170,10 +170,10 @@ ext {
             supportRunner:          "com.android.support.test:runner:${androidSupportRunnerVersion}",
             supportRules:           "com.android.support.test:rules:${androidSupportRulesVersion}",
             mockitoAndroid:         "org.mockito:mockito-android:${mockitoAndroidVersion}",
-            espressoCore: 'androidx.test.espresso:espresso-core:3.1.0',
-            espressoIntents: 'androidx.test.espresso:espresso-intents:3.1.0',
-            espressoContrib: 'androidx.test.espresso:espresso-contrib:3.1.0',
-            androidRunner: 'androidx.test:runner:1.1.0',
-            androidRules: 'androidx.test:rules:1.1.0'
+            espressoCore:           'androidx.test.espresso:espresso-core:3.1.0',
+            espressoIntents:        'androidx.test.espresso:espresso-intents:3.1.0',
+            espressoContrib:        'androidx.test.espresso:espresso-contrib:3.1.0',
+            androidRunner:          'androidx.test:runner:1.1.0',
+            androidRules:           'androidx.test:rules:1.1.0'
     ]
 }
