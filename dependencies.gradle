@@ -15,7 +15,7 @@ ext {
     javaxInjectVersion = '1'
     rxKotlinVersion = '2.1.0'
     androidAnnotationsVersion = '21.0.3'
-    daggerVersion = '2.11'
+    daggerVersion = '2.20'
     gsonVersion = '2.8.1'
     okHttpVersion = '3.8.1'
     timberVersion = '4.5.1'
