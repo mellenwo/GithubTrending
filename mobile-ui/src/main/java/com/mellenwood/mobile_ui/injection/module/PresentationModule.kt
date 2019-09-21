@@ -3,6 +3,7 @@ package com.mellenwood.mobile_ui.injection.module
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
 import com.mellenwood.mobile_ui.injection.ViewModelFactory
+import com.mellenwood.presentation.BrowseBookmarkedProjectsViewModel
 import com.mellenwood.presentation.BrowseProjectsViewModel
 import dagger.Binds
 import dagger.MapKey
@@ -18,11 +19,11 @@ abstract class PresentationModule {
     @ViewModelKey(BrowseProjectsViewModel::class)
     abstract fun bindBrowseProjectsViewModel(viewModel: BrowseProjectsViewModel): ViewModel
 
-//    @Binds
-//    @IntoMap
-//    @ViewModelKey(BrowseBookmarkedProjectsViewModel::class)
-//    abstract fun bindBrowseBookmarkedProjectsViewModel(
-//        viewModel: BrowseBookmarkedProjectsViewModel): ViewModel
+    @Binds
+    @IntoMap
+    @ViewModelKey(BrowseBookmarkedProjectsViewModel::class)
+    abstract fun bindBrowseBookmarkedProjectsViewModel(
+        viewModel: BrowseBookmarkedProjectsViewModel): ViewModel
 
 
     @Binds
